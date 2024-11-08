@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FalseJS - Better Than The Keyword Itself</title>
+  <style>/* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: #0066cc;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      font-weight: 700;
+    }
+
+    header .tagline {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    main {
+      padding: 60px 0;
+    }
+
+    .intro h2, .usage h2, .cta h2, .madewith h2 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .intro p, .usage p {
+      font-size: 1.1em;
+      text-align: center;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .usage, .madewith {
+      margin-top: 50px;
+    }
+
+    .madewith h2 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    .madewith h2 a {
+      text-decoration: none;
+      color: #0066cc
+    }
+
+    .feature {
+      background-color: #ffffff;
+      padding: 30px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature .icon {
+      font-size: 2em;
+      background-color: #333;
+      color: white;
+      border-radius: 50%;
+      padding: 20px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .feature h3 {
+      font-size: 1.5em;
+      margin-left: 20px;
+      color: #333;
+    }
+
+    .feature p {
+      font-size: 1.1em;
+      color: #555;
+      max-width: 70%;
+    }
+
+    .cta {
+      background-color: #0066cc;
+      color: white;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: white
+    }
+
+    .cta p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      background-color: #ff6600;
+      color: white;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #e65c00;
+    }
+
+    footer {
+      background-color: #f7f9fc;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    footer .heart {
+      color: red;
+    }
+
+    .navigation {
+      text-shadow: 0px 0px black;
+      font-size: 14px;
+    }
+
+    .navigation-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: sticky;
+      z-index: 99;
+
+      text-shadow: 0px 0px black;
+    }
+
+    .navigation-menu li {
+      display: inline;
+      float: left;
+      color: black;
+      z-index: 99;
+    }
+
+    .navigation-menu li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      cursor: pointer;
+      z-index: 99;
+      background-color: #dddddd;
+    }
+
+    .navigation-menu li a:hover {
+      background-color: #0080FF;
+      color: white;
+    }
+    </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navigation">
+    <ul class="navigation-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="https://ghub.io/falsejs">GitHub</a></li>
+        <li><a href="https://www.npmjs.com/package/falsejs">NPM</a></li>
+    </ul>
+</nav><br>
+  <header>
+    <div class="container">
+      <h1>FalseJS</h1>
+      <p class="tagline">Better than the keyword itself.</p>
+      <br>
+      <a href="https://github.com/10xEngineersQualityProgramming/FalseJS#readme" class="button">GitHub Repository</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="intro">
+        <h2>What is FalseJS?</h2>
+        <p>Ever wondered what would happen if JavaScript changed the <code>false</code> keyword to something else, like <code>no</code>, <code>nope</code>, <code>noway</code>, or something else? Chaos. That is what FalseJS is for.
+
+          The 10 attempts to get the value of false ensure that if one fails, it will go on to the next, so if JavaScript breaks one, there will still be more attempts. This is an alternative to the library <code>false</code> by mde, which uses the hardcoded boolean value <code>false</code>, and is way too short. FalseJS is way better. Also, if you just want your coding to be 10x, this is the perfect library for you.</p>
+      </section>
+
+      <section class="usage">
+        <h2>Why Use FalseJS?</h2>
+        <div class="feature">
+          <div class="icon">🔐</div>
+          <h3>Enhanced Security</h3>
+          <p>We ensure that the boolean value you need is always there when you need it, with an added validation step to ensure it always returns falses.</p>
+        </div>
+
+        <div class="feature">
+          <div class="icon">🌀</div>
+          <h3>Endless Customization</h3>
+          <p>FalseJS takes in multiple options, like whether to enable logging, do async things, and disable April Fools' behavior!</p>
+        </div>
+
+        <div class="feature">
+          <div class="icon">💡</div>
+          <h3>Additional Functions</h3>
+          <p>FalseJS comes with a jQuery plugin, express middleware, and an <code>isFalse</code> helper function to check if a value is false!</p>
+        </div>
+
+        <div class="feature">
+          <div class="icon">🔗</div>
+          <h3>Multiple Dependencies</h3>
+          <p>FalseJS uses loads of dependencies for ensurability and reliability, such as React, Lodash, Underscore, <code>immediate-error</code>, and more.</p>
+        </div>
+
+        <div class="feature">
+          <div class="icon">❤</div>
+          <h3>Made With HEAVY BLACK HEART U+2764</h3>
+          <p>FalseJS is made with HEAVY BLACK HEART U+2764 by tj-commits, and is 10x-engineered and 10xGPWTHPL licensed.</p>
+        </div>
+      </section>
+
+      <section class="usage">
+      </section>
+
+      <section class="cta">
+        <h2>Ready to get started?</h2>
+        <p>FalseJS is just an <code>npm install</code> away. Go ahead, let your mind be blown!</p>
+        <a href="https://www.npmjs.com/package/falsejs" class="button">Visit FalseJS NPM Package</a>
+      </section>
+      <section class="madewith">
+        <h2>made with HEAVY BLACK HEART U+2764</h2>
+        <h2><a href="https://github.com/10xEngineersQualityProgramming/10xGPWTHPL">10xGPWTHPL</a> Licenced</h2>
+        <h2>10x-engineered</h2>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 FalseJS. 10xly made with HEAVY BLACK HEART U+2764 by the FalseJS team.</p>
+    </div>
+  </footer>
+</body>
+</html>
