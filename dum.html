@@ -1,263 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10x'ly Made</title>
-    <style>
-
-
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #333;
-}
-
-.logo {
-  background: white;
-  border-radius: 5px;
-}
-
-#about p {
-  font-size: 1.1rem;
-}
-
-.logo img {
-  border-radius: 20px;
-}
-header .logo h1 {
-  font-size: 2.5rem;
-  color: #f0f0f0;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: italic;
-
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-header nav ul li {
-  display: inline;
-}
-
-header nav ul li a {
-  color: #f0f0f0;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-header nav ul li a:hover {
-  color: #00bcd4;
-}
-
-#hero {
-  background: linear-gradient(45deg, #00bcd4, #ff4081);
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero-content h2 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
-
-.cta-button {
-  background-color: #00bcd4;
-  color: #fff;
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.cta-button:hover {
-  background-color: #ff4081;
-}
-
-section {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.section-title h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-}
-
-.services-container {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.service {
-  background-color: #333;
-  padding: 40px;
-  border-radius: 8px;
-  width: 30%;
-}
-
-.service h3 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.service p {
-  font-size: 1.1rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-form input, form textarea {
-  width: 80%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-form button {
-  background-color: #00bcd4;
-  color: #fff;
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 5px;
-}
-
-form button:hover {
-  background-color: #ff4081;
-}
-
-footer {
-  background-color: #333;
-  text-align: center;
-  padding: 20px;
-  color: #f0f0f0;
-  font-size: 1rem;
-}
-
-    </style>
-    <style>
-        body {
-            background-color: #f0f8ff;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('./coding.gif')
-        }
-        header {
-            background-image: url('./pride-rainbow.gif');
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 2em;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        nav {
-            background-color: #008080;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 10px;
-            font-weight: bold;
-        }
-        main {
-            margin: 20px;
-        }
-        section {
-            background-color: #ffffff;
-            border: 2px solid #008080;
-            padding: 15px;
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: #ff6347;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            width: 100%;
-        }
-        .button {
-            background-color: #ff6347;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .gif-image {
-            max-width: 100%;
-            margin-top: 20px;
-        }
-        .highlight {
-            color: #ff6347;
-            font-weight: bold;
-        }
-
-        .services-container {
-            color: #fff !important
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10x'ly Made</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-    <header>
-        <img src="10x'ly made.png" alt="10x'ly Made" width="300">
-    </header>
-
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="10x'ly made" width="200">
+    </div>
     <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#packages">Packages</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="/falsejs.html">FalseJS</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
+  <section id="hero">
+    <div class="hero-content">
+      <h3>10x'ly Made</h3>
+      <h2>10x Innovation at its Peak</h2>
+      <p>Empowering all developers across the world to be more 10x, by creating 10x-engineered NPM packages and libraries for the word.</p>
+      <a href="#services" class="cta-button">Explore Our Services</a>
+    </div>
+  </section>
 
-
-        <img src="3dgifmaker00132.gif" alt="10x" width="100">
-        <img src="10x.gif" alt="10x" width="100">
-        <img src="180.gif" alt="10x" width="100">
-        <img src="180.gif" alt="10x" width="100">
-        <img src="180.gif" alt="10x" width="100">
-        <img src="180.gif" alt="10x" width="100">
-        <img src="180.gif" alt="10x" width="100">
-        <img src="180.gif" alt="10x" width="100">
-        <img src="180.gif" alt="10x" width="100"><br>
-        <img src="10xif.gif" alt="10x" width="100">
-        <img src="10xif.gif" alt="10x" width="100">
-        <img src="10xif.gif" alt="10x" width="100">
-        <img src="10xif.gif" alt="10x" width="100">
-        <center><H1 style="color: white;background:black">Empowering all developers across the world to be more 10x, by creating 10x-engineered NPM packages and libraries for the world.</H1></center>
-        <center><img src="underconstruction.gif" alt="UNDER CONSTRUCTION!!!!!!!!!!!!!!!!"><br><img src="Hollow7752Construction.gif" alt="under construction"><br><img src="mamagnolia_acresunderconstruction.gif" alt="under construction"></center>
-        <section id="about">
-            <h2>About us</h2>
-            <p>We believe all developers should be 10x and 10x engineers, and that every project and NPM package should be 10xly made with HEAVY BLACK HEART U+2764.
+  <section id="about">
+    <div class="section-title">
+      <h2>About Us</h2>
+    </div>
+    <p>We believe all developers should be 10x and 10x engineers, and that every project and NPM package should be 10xly made with HEAVY BLACK HEART U+2764.
       That's why we create NPM packages for everyone to use in their 10x projects.
     We want to spread the 10x'ness so more can be the 10x'ness. 10x'ness is contagious but in a good way, and we strive to keep it flowing around in 10x engineers.
   Without 10x'ness nothing would be 10x which is why 10x'ly Made is so important.</p>
-        </section>
+  </section>
 
   <section id="services">
     <div class="section-title">
@@ -453,13 +234,10 @@ footer {
     </div>
 
   </section>
-<h1 style="color:white">MADE BY TJ-COMMITS!!!1!</h1>
-<h1 style="color:white">by the way 10xly has made more packages than this but these are just the best ones i couldnt list them all here</h1>
-    </main>
-
-    <footer>
-        &copy; 2025 10x'ly Made | All Rights Reserved
-    </footer>
-
+<h1>MADE BY TJ-COMMITS!!!1!</h1>
+<h1>by the way 10xly has made more packages than this but these are just the best ones i couldnt list them all here</h1>
+  <footer>
+    <p>&copy; 2025 10x'ly Made Ventures | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
