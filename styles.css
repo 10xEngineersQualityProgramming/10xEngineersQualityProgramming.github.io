@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+}
+
+.logo {
+  background: white;
+  border-radius: 5px;
+}
+
+#about p {
+  font-size: 1.1rem;
+}
+
+.logo img {
+  border-radius: 20px;
+}
+header .logo h1 {
+  font-size: 2.5rem;
+  color: #f0f0f0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+  color: #00bcd4;
+}
+
+#hero {
+  background: linear-gradient(45deg, #00bcd4, #ff4081);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h2 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #ff4081;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.service {
+  background-color: #333;
+  padding: 40px;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.service h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.service p {
+  font-size: 1.1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+form input, form textarea {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #ff4081;
+}
+
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 20px;
+  color: #f0f0f0;
+  font-size: 1rem;
+}
