@@ -1,0 +1,8 @@
+(function(){
+  function r(a,b){
+    if(a===b)return!0;const c=typeof a,d=typeof b;if(null===a||null===b||"object"!==c&&"function"!==c||c!==d)return!1;a=a;b=b;const e=Object.keys(a),f=Object.keys(b);if(e.length!==f.length)return!1;for(const g of e){if(!Object.prototype.hasOwnProperty.call(b,g))return!1;const h=a[g],k=b[g],l="object"===typeof h&&null!==h&&"object"===typeof k&&null!==k;if(l?(!r(h,k)&&(l=!1)):h!==k)return!1}return!0
+  }
+
+
+return r(module, require)
+})()
